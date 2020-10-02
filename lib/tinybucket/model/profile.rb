@@ -54,6 +54,11 @@ module Tinybucket
         Tinybucket::Resource::User::Repos.new(username, options)
       end
 
+      def pullrequests(options = {})
+        Tinybucket::Resource::User::PullRequets.new(username, options)
+      end
+
+      
       private
 
       def user_api
