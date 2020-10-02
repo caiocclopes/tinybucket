@@ -55,7 +55,7 @@ module Tinybucket
       end
 
       def pullrequests(options = {})
-        Tinybucket::Resource::PullRequests.new(username, options)
+        Tinybucket::Resource::User::PullRequests.new(username, options)
       end
 
       
