@@ -23,6 +23,10 @@ module Tinybucket
         def path_to_repos
           build_path('/repositories', [username, 'username'])
         end
+        
+        def path_to_prs
+          build_path('/pullrequests', [username, 'selected_user'])
+        end
 
         def base_path
           build_path('/users', [username, 'username'])
