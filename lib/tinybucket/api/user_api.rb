@@ -49,6 +49,14 @@ module Tinybucket
           get_parser(:collection, Tinybucket::Model::Profile)
         )
       end
+      
+      def pullrequests(options = {})
+        get_path(
+          path_to_prs,
+          options,
+          get_parser(:collection, Tinybucket::Model::PullRequest)
+        )
+      end
 
       # Send 'GET the user's repositories' request
       #
